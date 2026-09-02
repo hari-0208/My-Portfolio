@@ -1,0 +1,154 @@
+/* CONTACT */
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  gap: 50px;
+}
+
+/* CONTACT HEADING */
+
+.contact-content h3 {
+  color: var(--text);
+  font-size: 30px;
+}
+
+/* PARAGRAPH */
+
+.contact-content p {
+  color: var(--text-light);
+  margin-top: 15px;
+}
+
+/* CONTACT DETAILS */
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contact-details a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-details a i {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-soft);
+  border-radius: 8px;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.contact-details span {
+  display: block;
+  color: var(--text-light);
+  font-size: 11px;
+}
+
+.contact-details strong {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+  padding: 25px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: 0.35s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-large);
+}
+
+/* INPUT ROW */
+
+.input-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.input-group {
+  margin-bottom: 17px;
+}
+
+.input-group label {
+  display: block;
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  outline: none;
+  background: var(--bg);
+  border: 1px solid var(--border-dark);
+  border-radius: 7px;
+  color: var(--text);
+  font-size: 13px;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-focus);
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.primary-btn {
+  background: var(--primary-color);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border: none;
+  display: flex;
+  gap: 5px;
+  border-radius: 8px;
+}
+
+.primary-btn:hover {
+  background: var(--primary-dark);
+  box-shadow: var(--shadow);
+}
+
+@media screen and (max-width: 1024px) {
+  /* Contact */
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .input-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-form {
+    padding: 22px;
+  }
+}

@@ -1,0 +1,226 @@
+/* IMPORT FONTS / ICONS */
+
+@import url("https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* COMMON VARIABLES */
+
+:root {
+  /* MAIN COLOR */
+
+  --primary-color: #0284c7;
+  --primary-dark: #0369a1;
+  --primary-light: #eff6ff;
+
+  /* BACKGROUND COLOR */
+
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --bg-secondary: #f1f5f9;
+  --bg-soft: #eff6ff;
+  --bg-orange: #fff7ed;
+  --bg-yellow: #fefce8;
+
+  /* TEXT COLOR */
+
+  --text: #0f172a;
+  --text-muted: #475569;
+  --text-light: #64748b;
+
+  /* BORDER COLOR */
+
+  --border: #e2e8f0;
+  --border-dark: #cbd5e1;
+  --border-primary-light: #bfdbfe;
+  --border-profile: #dbeafe;
+
+  /* SPECIAL COLORS */
+
+  --white: #ffffff;
+  --orange: #ea580c;
+  --blue: #2563eb;
+  --yellow: #ca8a04;
+
+  /* DARK MODE COLORS  */
+
+  --dark-bg: #020617;
+  --dark-card: #0f172a;
+  --dark-profile-bg: #082f49;
+  --dark-profile-border: #164e63;
+  --dark-image-border: #0f172a;
+  --dark-skill-bg: #172554;
+
+  /* NAVBAR & FOOTER */
+
+  --navbar-bg: rgba(248, 250, 252, 0.95);
+  --footer-bg: #f1f5f9;
+
+  /* WEBSITE WIDTH  */
+  --max-width: 1100px;
+
+  /* SHADOWS */
+
+  --shadow: 0 5px 15px rgba(15, 23, 42, 0.06);
+  --shadow-large: 0 15px 40px rgba(15, 23, 42, 0.12);
+  --shadow-primary: 0 10px 22px rgba(2, 132, 199, 0.25);
+  --shadow-focus: rgba(2, 132, 199, 0.08);
+}
+
+/* DARK MODE */
+
+.app.dark {
+  /* BACKGROUND */
+
+  --bg: var(--dark-bg);
+  --card: var(--dark-card);
+
+  /* TEXT */
+
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+
+  /* BORDER */
+
+  --border: #1e293b;
+  --border-dark: #334155;
+
+  /* NAVBAR / FOOTER */
+
+  --navbar-bg: rgba(2, 6, 23, 0.95);
+  --footer-bg: #0f172a;
+}
+
+/* GLOBAL CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* LINKS */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+main {
+  width: 100%;
+  background: var(--bg);
+  color: var(--text);
+}
+
+section {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.section {
+  width: 92%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+/* SECTION HEADING */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section-heading p {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.section-heading h2 {
+  color: var(--text);
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.section-heading h2 span {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 900px) {
+  /* SECTION */
+
+  .section {
+    width: 92%;
+    padding: 80px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+}
+
+
+@media screen and (max-width : 400px) {
+  /* SECTION */
+
+  .section { 
+    width: 94%;
+    padding: 65px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 35px;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+}
