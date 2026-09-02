@@ -216,3 +216,17 @@
     font-size: 13px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .project-img {
+    height: 230px;
+  }
+
+  .project-card h3 {
+    font-size: 20px;
+  }
+
+  .project-description {
+    font-size: 13px;
+  }
+}

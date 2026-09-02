@@ -266,3 +266,24 @@
     font-size: 11px;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .logo {
+    font-size: 17px;
+  }
+
+  .nav-actions {
+    gap: 3px;
+  }
+
+  .theme-toggle,
+  .menu-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nav-resume {
+    padding: 6px 7px;
+    font-size: 10px;
+  }
+}
