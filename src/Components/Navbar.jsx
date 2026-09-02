@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../Styles/Navbar.css";
 
-import Resume from "/Resume/HARIHARAN_RESUME.pdf";
+import Resume from "/Resume/HARIHARAN_S_RESUME.pdf";
 const Navbar = ({ darkMode, setDarkMode }) => {
   // MENU
 
